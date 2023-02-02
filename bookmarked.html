@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="scriptBook.js"></script>
+    <title>Frontend Mentor | Entertainment web app</title>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <img src="/assets/logo.svg" alt="Logo" class="logo" />
+      <div class="nav-icon-box">
+        <a href="index.html" class="nav-icon-link"
+          ><img
+            src="/assets/icon-nav-home.svg"
+            alt="Nav Icon Full"
+            class="nav-icon"
+        /></a>
+        <a href="movies.html" class="nav-icon-link"
+          ><img
+            src="/assets/icon-nav-movies.svg"
+            alt="Nav Icon Full"
+            class="nav-icon"
+        /></a>
+        <a href="tv-series.html" class="nav-icon-link"
+          ><img
+            src="/assets/icon-nav-tv-series.svg"
+            alt="Nav Icon Full"
+            class="nav-icon"
+        /></a>
+        <a href="#" class="nav-icon-link"
+          ><img
+            src="/assets/icon-nav-bookmark.svg"
+            alt="Nav Icon Full"
+            class="nav-icon home"
+        /></a>
+      </div>
+      <img src="/assets/image-avatar.png" alt="" class="nav-img-avatar" />
+    </nav>
+
+    <main>
+      <div class="search-box">
+        <img
+          src="/assets/icon-search.svg"
+          alt="Search Bar"
+          class="search-icon"
+        />
+        <input
+          type="text"
+          id="myInput"
+          placeholder="Search for movies"
+          class="search-input"
+        />
+      </div>
+
+      <section class="movies">
+        <h1 class="section-heading">Bookmarked Movies</h1>
+        <div class="movie-grid" id="movieBox"></div>
+      </section>
+      <section class="movies movie-bookmarked">
+        <h1 class="section-heading">Bookmarked TV Series</h1>
+        <div class="movie-grid" id="tvBox"></div>
+      </section>
+    </main>
+  </body>
+</html>
